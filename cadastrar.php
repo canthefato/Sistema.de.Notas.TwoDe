@@ -30,6 +30,51 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
 <!DOCTYPE html>
   <html lang="pt-BR">
     <head>
+
+    <style> 
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-container {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+.login-container h1 { color: #ff3c00; margin-bottom: 20px; }
+label { display: block; text-align: left; margin-bottom: 5px; font-weight: 600; }
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff0000ff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover { background-color: #ff1702; }
+p a { color: #ff3c00; text-decoration: none; font-weight: bold; }
+.message { padding: 10px; margin-bottom: 15px; border-radius: 5px; text-align: center; }
+.error { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+</style>
       <meta charset="UTF-8">
           <title>Cadastro - Sistema de Notas</title>
             <link rel="stylesheet" href="style.css">
